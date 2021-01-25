@@ -1,4 +1,5 @@
-import re, time
+import re
+import time
 from flask import Flask, request
 import telegram
 from telebot.credentials import bot_token, bot_username, URL
@@ -31,7 +32,7 @@ def respond():
         HELLO, THIS IS AN AUTO FORWARD BOT
         """
         bot.sendChatAction(chat_id=chat_id, action="Muahahaha")
-        sleep(1.5)
+        time.sleep(1.5)
         bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
 
     else:
