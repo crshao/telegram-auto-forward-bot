@@ -31,7 +31,7 @@ def respond():
         bot_welcome = """
         HELLO, THIS IS AN AUTO FORWARD BOT
         """
-        bot.sendChatAction(chat_id=chat_id, action="Muahahaha")
+        bot.sendChatAction(chat_id=chat_id, action="typing")
         time.sleep(1.5)
         bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
 
