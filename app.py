@@ -38,7 +38,7 @@ def respond():
     else:
         try:
             #just testing
-            bot.sendMessage(chat_id=chat_id, text="TESTING", reply_to_message_id=msg_id)
+            bot.sendMessage(chat_id=chat_id, text="comeon", reply_to_message_id=msg_id)
         except:
             bot.sendMessage(chat_id=chat_id, text="There is an error", reply_to_message_id=msg_id)
 
